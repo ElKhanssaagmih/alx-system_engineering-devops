@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -printf "%M %U %G %s %p\n"
+find . -maxdepth 1 -name "*.html" -exec mv --target-directory=/tmp {} +
